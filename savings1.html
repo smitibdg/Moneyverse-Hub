@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>20% - Savings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="savings">
+        <form id="savings-form">
+    		<h1>Savings</h1>
+            <label for="current-amount">Current Savings Amount:</label>
+            <input type="number" id="current-amount" name="current-amount" placeholder="Enter current amount" required></br></br>
+
+            <label for="savings-goal">Savings Goal:</label>
+            <input type="number" id="savings-goal" name="savings-goal" placeholder="Enter savings goal" required></br></br>
+
+
+            <label for="emergency">Emergency/Medical Fund:</label>
+            <input type="number" id="emergency" name="emergency" placeholder="Enter Amount"></br></br>
+
+
+            <label for="travel">Travel Fund:</label>
+            <input type="number" id="travel" name="travel" placeholder="Enter Amount"></br></br>
+
+
+            <label for="monthlyContribution">Monthly Contribution:</label>
+            <input type="number" id="monthlyContribution" name="monthlyContribution" placeholder="Enter Monthly Contribution"></br></br>
+
+
+            <button type="button" onclick="saveBudget('saves')" id="save-btn">Save</button>
+        </form>
+
+<script>
+    document.getElementById("save-btn").onclick = function() {
+        alert("Budget Saved Successfully!");
+        document.getElementById("needs-form").reset(); // Clears form fields
+    };
+</script>
+
+</body>
+</html>

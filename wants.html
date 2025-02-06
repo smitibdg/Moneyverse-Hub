@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>30% - Wants</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="wants">
+    <form id="wants-form">
+    <h1>30% Wants</h1>
+        <label for="wants-name">Budget Name:</label>
+        <input type="text" id="wants-name" placeholder="Enter Budget Name" required></br></br>
+
+        <label for="wants-amount">Amount:</label>
+        <input type="number" id="wants-amount" placeholder="Enter Amount" required></br></br>
+
+        <label for="wants-category">Category:</label>
+        <select id="wants-category" required>
+	    <option value="">--Select--</option>
+            <option value="movies">Movies</option>
+            <option value="streaming-subscription">Streaming Subscription</option>
+            <option value="eating-out">Eating Out/Dining</option>
+            <option value="family-outings">Family Outings/Picnics</option>
+            <option value="street-food">Street Food</option>
+            <option value="wedding-festivals">Wedding & Festivals</option>
+            <option value="domestic-help">Domestic Help</option>
+        </select><br>
+
+        <button type="submit" onclick="saveBudget('wants')" id="save-budget-btn">Save Budget</button>
+    </form>
+    <div id="wants-table-container">
+        <h3>Saved Wants Budgets</h3>
+        <table id="wants-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Period</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button onclick="calculateTotalBudget('wants')">Calculate Total Budget</button>
+        <span id="wants-total-budget"></span>
+    </div>
+
+
+<script>
+    document.getElementById("save-budget-btn").onclick = function() {
+        alert("Budget Saved Successfully!");
+        document.getElementById("needs-form").reset(); // Clears form fields
+    };
+</script>
+
+
+</body>
+</html>

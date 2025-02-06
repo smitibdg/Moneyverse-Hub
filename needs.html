@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>50% - Needs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="needs">
+            <section class="budget-form">
+                <h1 style="text-align: center; font-size: 40px;">Budget Management</h1>
+                <form id="needs-form" style="font-size:20px;">
+                    <label>Budget Name: <input type="text" id="budgetName" placeholder="Enter Budget Name" required></label></br></br>
+
+                    <label>Budget Period: 
+                        <select id="budgetPeriod">
+			    <option value="">--Select--</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="yearly">Yearly</option>
+                        </select>
+                        ⏳
+                    </label></br></br>
+
+                    
+		    <label>Start Date: <input type="date" id="startDate"> 📅</label>
+                    <label>End Date: <input type="date" id="endDate"> 📅</label></br></br>
+
+                   
+		    <label>Amount: <input type="number" id="budgetAmount" placeholder="Enter Amount" required></label></br></br>
+
+                    <label>Category:
+                        <select id="budgetCategory">
+                            <option value="rent">Rent</option>
+                            <option value="society-maintenance">Society Maintenance</option>
+                            <option value="food-groceries">Food & Groceries</option>
+                            <option value="electricity-bill">Electricity Bill</option>
+                            <option value="gas-bill">Gas Bill</option>
+                            <option value="mobile-recharge">Mobile Recharge</option>
+                            <option value="home-repairs">Home Repairs</option>
+                            <option value="general-medical">General Medical</option>
+                            <option value="exam-fees">Exam Fees</option>
+                            <option value="school-college-tuition">School/College 
+                        </select>
+                    </label></br></br>
+		    <center><button type="submit" id="saveBudget" style="font-size:20px;">Save Budget</button></center>
+		    
+                </form>
+            </section>
+
+	<section class="saved-budg-box">
+            <section class="needs-table-container">
+                <h2>Saved Budgets</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Period</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Amount</th>
+                            <th>Category</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="budgetTableBody">
+                        <!-- Saved budgets appear here -->
+                    </tbody>
+                 </table>
+
+
+
+            <!-- Calculate Total Budget -->
+            <center><button type="button" id="calculateTotalBudgetBtn">Calculate Total Budget</button>
+            <span id="totalBudgetDisplay"></span></center> <!-- To show the total calculated budget -->
+	    </section>
+        </section>
+
+</body>
+</html>

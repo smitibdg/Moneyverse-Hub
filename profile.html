@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - MoneyVerse Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="dashboard.html"><img src="images/logo.png" alt="Logo" id="logo"></a>
+        <h1>MoneyVerse Hub</h1>
+        <div class="header-right">
+	    <a href="profile.html"><img src="images/profile.png" alt="Settings" id="profile-icon"></a>
+            <a href="settings.html"><img src="images/settings.png" alt="Settings" id="settings-icon"></a>
+        </div>
+    </header>
+
+        <!-- Add horizontal line -->
+        <hr class="divider">
+
+    <header>
+
+        <div class="menu-container">
+            <a href="dashboard.html"><img src="images/dash1.png" alt="3 dashed line" id="dashboard-icon" hspace="50" vspace="0" align="left"></a>
+            <nav class="dropdown-menu">
+                <a href="profile.html">Profile</a>
+                <a href="journal.html">Daily Journal</a>
+                <a href="settings.html">Settings</a>
+            </nav>
+        </div>
+
+        <b><nav>
+	    <a href="dashboard.html">Dashboard</a>
+            <a href="finance.html">Finance</a>
+            <a href="events.html">Events</a>
+            <a href="games.html">Games</a>
+            <a href="quizzes.html">Quizzes</a>
+        </nav></b>
+    </header>
+
+    <div class="bg-profile"></div> <!-- Background Image -->
+
+
+    <main>
+        <section id="profile">
+            <h2 style="text-align: center; font-size: 40px">Profile</h2>
+            <form id="profile-form">
+                <div class="profile-image">
+                    <label for="profile-image-upload">Upload Image:</label>
+                    <input type="file" id="profile-image-upload" accept="image/*" required>
+                    <br>
+                    <!-- Display uploaded image -->
+                    <img src="" id="displayProfileImage" alt="Profile Image" width="100">
+                </div>
+
+
+                <label for="profile-name">Name:</label>
+                <input type="text" id="profile-name" placeholder="Enter your Name" required>
+                
+                <label for="profile-email">Email ID:</label>
+                <input type="email" id="profile-email" placeholder="Enter Email-ID" required>
+                
+                <label for="profile-dob">Date of Birth:</label>
+                <input type="date" id="profile-dob" name="profile-dob" required>
+
+                <div class="overview">
+                    <label>Salary Income:</label>
+                    <input type="number" id="salaryIncome" placeholder="Enter salary amount" required></br></br>
+                 
+		    <label>Current Account Balance:</label>
+                    <input type="number" id="currentBalance" placeholder="Enter account balance"></br></br>
+                </div>
+
+
+            <h2 style="text-align: center; font-size: 30px">Savings</h2>
+                <label for="current-amount">Current Savings Amount:</label>
+                <input type="number" id="current-amount" name="current-amount" placeholder="Enter current amount" required>
+
+                <label for="savings-goal">Savings Goal:</label>
+                <input type="number" id="savings-goal" name="savings-goal" placeholder="Enter savings goal" required>
+
+                <center><button type="submit" style="font-size: 20px" id="save-btn">Save Profile</button></center></br>
+            </form>
+
+        </section>
+    </main>
+
+
+
+    <footer>
+        <center><marquee behavior="scroll" scrollamount="20" height="40px">&copy; 2025 MoneyVerse Hub by [Smiti Badugu].</marquee></center>
+    </footer>
+
+</body>
+</html>

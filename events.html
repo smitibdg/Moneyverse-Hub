@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - MoneyVerse Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <a href="dashboard.html"><img src="images/logo.png" alt="Logo" id="logo"></a>
+        <h1>MoneyVerse Hub</h1>
+        <div class="header-right">
+	    <a href="profile.html"><img src="images/profile.png" alt="Settings" id="profile-icon"></a>
+            <a href="settings.html"><img src="images/settings.png" alt="Settings" id="settings-icon"></a>
+        </div>
+    </header>
+
+        <!-- Add horizontal line -->
+        <hr class="divider">
+
+    <header>
+
+        <div class="menu-container">
+            <img src="images/dash1.png" alt="3 dashed line" id="dashboard-icon" hspace="50" vspace="0" align="left"></a>
+            <nav class="dropdown-menu">
+                <a href="profile.html">Profile</a>
+                <a href="journal.html">Daily Journal</a>
+                <a href="settings.html">Settings</a>
+            </nav>
+        </div>
+
+        <b><nav>
+	    <a href="dashboard.html">Dashboard</a>
+            <a href="finance.html">Finance</a>
+            <a href="events.html">Events</a>
+            <a href="games.html">Games</a>
+            <a href="quizzes.html">Quizzes</a>
+        </nav></b>
+    </header>
+
+
+    <div class="bg-events"></div> <!-- Background Image -->
+
+
+<main style="text-align: left"> 
+    <section id="events">
+        <h1 style="font-size: 40px; text-align: center;">Events</h1>
+        <div class="event-creation">
+            <h3>Create New Event</h3>
+            <form id="event-form">
+                <label for="event-title">Title:</label>
+                <input type="text" id="event-title" name="event-title" required>
+                
+                <label for="event-date">Date:</label>
+                <input type="date" id="event-date" name="event-date" required>
+                
+                <label for="event-description">Description:</label>
+                <textarea id="event-description" name="event-description" rows="3" required></textarea>
+                
+                <center><button type="submit" id="create-event-btn">Create Event</button></center>
+            </form>
+        </div>
+    </section>
+</main>
+
+    <footer>
+        <center><marquee behavior="scroll" scrollamount="20" height="40px">&copy; 2025 MoneyVerse Hub by [Smiti Badugu].</marquee></center>
+    </footer>
+
+</body>
+</html>

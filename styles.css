@@ -1,0 +1,1000 @@
+/* styles.css */
+#intro-image {
+    position: fixed;
+    top: -70px;
+    left: 300px;
+    bottom: -100px;
+    width: 900px;
+    height: 900px;
+    object-fit: cover;
+    animation: scrollLeft 2s 2s forwards; /* Trigger animation after 2 seconds */
+    z-index: 1000; /* Ensure it covers the whole page */
+}
+
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translate(calc(-100vw - 50%), -50%);
+        opacity: 0; /* Optionally fade out */
+    }
+}
+
+
+#intro-image.hidden {
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lavender;
+    color: black;
+    padding: 15px 20px;
+    font-family: 'Segoe Print';
+    font-size: 25px;
+    position: relative;
+}
+
+
+header h1 {
+    font-family: Segoe Print;
+    font-size: 70px;
+    text-align:left;
+    flex-grow: 1;
+    margin: 0;
+}
+
+.header-container {
+    width: 100%;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #e6e6fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 3; /* Ensure dropdown is in front */
+}
+
+.menu-container:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    height: 150px; /* Adjust size as needed */
+    cursor: pointer;
+}
+
+.header-right {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#profile-icon {
+    height: 100px; /* Adjust size as needed */
+    cursor: pointer;
+}
+
+#settings-icon {
+    height: 70px; /* Adjust size as needed */
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+body {
+    font-family: 'Candara';
+    background-color: #f8f8f8;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    height: calc(85vh - 80px); /* Adjust the main section height */
+}
+
+
+
+#sign-in {
+    background-color: #79BAEC;
+    padding: 40px 60px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#sign-in:hover {
+    background-color: skyblue;
+}
+
+.bg-signin {
+    background-image: url('images/2.avif'); repeat center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5; /* Adjust the opacity to make the image lighter */
+}
+
+#sign-in-button {      /*box*/
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#sign-in-button:hover {
+    background-color: lightgreen;
+}
+
+#sign-in-btn {
+    background-color: pink;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    align-self: flex-start;
+    font-size: 20px;
+}
+
+#sign-in-btn:hover {
+    background-color: #5f5fff;
+}
+
+
+
+
+
+/*hr line*/
+.divider {
+    border: none;
+    height: 2px; /* Adjust thickness */
+    background-color: black; /* Color of the line */
+    margin: 10px auto; /* Center the line */
+    width: 50%; /* Adjust width as needed */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 170px; /* Adjust top position to be between top section and nav */
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #B048B5;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+.bg-dashboard {
+    background-image: url('images/3.jpg'); repeat center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5; /* Adjust the opacity to make the image lighter */
+}
+
+.intro {
+    text-align: center;
+    margin: 40px auto;
+    width: 80%;
+    background-color: lavender;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.intro h2 {
+    font-size: 30px;
+    color: #2d3e50;
+}
+
+.intro p {
+    font-family: Candara;
+    font-size: 20px;
+    color: #444;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Journal*/
+#journal {
+    background-color: #ffffff;
+    padding: 20px 10px; /* 300px padding on the left and right */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.bg-journal {
+    background-image: url('images/6.png'); repeat center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5; /* Adjust the opacity to make the image lighter */
+}
+
+body {
+    font-family: Candara; font-size: 20px; text-align: center;
+}
+
+
+/* Journal Page Styles */
+.journal-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.to-do-list {
+    flex: 1;
+    background: #fafad2;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    min-width: 200px; /* Prevents boxes from shrinking too much */
+}
+
+.to-do-list h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.to-do-list textarea {
+    width: 100%;
+    height: 150px;
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 16px;
+}
+
+.notes {
+    flex: 1;
+    background: #ffe4b5;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    min-width: 200px; /* Prevents boxes from shrinking too much */
+}
+
+.notes h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.notes textarea {
+    width: 100%;
+    height: 150px;
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 16px;
+}
+
+.remember {
+    flex: 1;
+    background: #ffb6c1;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    min-width: 200px; /* Prevents boxes from shrinking too much */
+}
+
+.remember h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.remember textarea {
+    width: 100%;
+    height: 150px;
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 16px;
+}
+
+.goals {
+    flex: 1;
+    background: #add8e6;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    min-width: 200px; /* Prevents boxes from shrinking too much */
+}
+
+.goals h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.goals textarea {
+    width: 100%;
+    height: 150px;
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Events*/
+#events {
+    background-color: #E0B0FF;
+    padding: 20px 80px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+#events:hover {
+    background-color: violet;
+}
+
+.bg-events {
+    background-image: url('images/7.jpg'); repeat center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5; /* Adjust the opacity to make the image lighter */
+}
+
+#event-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#event-form label {
+    margin-top: 10px;
+}
+
+#event-form input,
+#event-form textarea {
+    padding: 15px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#event-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    align-self: flex-start;
+    font-size: 20px;
+}
+
+#event-form button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+/*Games*/
+#games {
+    background-color: #fff9a3;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto; /* Center the section */
+    max-height: calc(100vh - 200px); /* Adjust the max height to fit above the footer */
+    overflow-y: auto; /* Enable scrolling if the content exceeds the max height */
+}
+
+
+.bg-games {
+    background-image: url('images/8.jpg'); repeat center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5; /* Adjust the opacity to make the image lighter */
+}
+
+.play-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.play-button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+
+/*Quizzes*/
+#quizzes {
+    background-color: #fff9a3;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.bg-quizzes {
+    background-image: url('images/10.png'); repeat center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5; /* Adjust the opacity to make the image lighter */
+}
+
+.play-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.play-button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+
+/*Profile*/
+#profile {
+    background-color: #ffd3ff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto; /* Center the section */
+    max-height: calc(100vh - 200px); /* Adjust the max height to fit above the footer */
+    overflow-y: auto; /* Enable scrolling if the content exceeds the max height */
+}
+
+.bg-profile {
+    background-image: url('images/11.jpg'); repeat center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5; /* Adjust the opacity to make the image lighter */
+}
+
+#profile-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-form label {
+    margin-top: 5px;
+}
+
+#profile-form input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+#profile-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+#profile-form button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+/*Settings*/
+#settings {
+    background-color: #e9ffd3;
+    padding: 40px 80px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+#settings:hover {
+    background-color: #98FF98;
+}
+
+#settings-form button {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    align-self: flex-start;
+    font-size: 20px;
+}
+
+#settings-form button:hover {
+    background-color: #5f5fff;
+}
+
+.bg-settings {
+    background-image: url('images/12.jpg'); repeat center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5; /* Adjust the opacity to make the image lighter */
+}
+
+
+/* Styles for the header */
+header {
+    position: relative;
+}
+
+/* Styles for the menu container */
+.menu-container {
+    position: absolute;
+    top: 8px; /* Adjust the top value to position it below the logo */
+    left: 0; /* Align the image to the left corner */
+}
+
+/* Initial styles for the dashboard icon */
+#dashboard-icon {
+    width: 90px;
+    height: 50px;
+    transition: all 0.3s ease; /* Transition effect */
+    cursor: pointer; /* Change cursor to pointer only on the image */
+}
+
+/* Styles for the dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 70px; /* Adjust based on the height of the image */
+    left: 10px; /* Adjust for alignment */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the dropdown menu links */
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Change the image and show the dropdown menu on hover */
+.menu-container:hover #dashboard-icon {
+    width: 120px;
+    height: 80px;
+    background-color: none;
+}
+
+.menu-container:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Menu*/
+#menu {
+    background-color: #ffffd3;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40px;"
+}
+
+.menu1 {
+    list-style-type: decimal;
+    background-color: #ffffd3;
+    padding: 50px;
+    margin: 0;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;"
+}
+
+.menu1:hover {
+    background-color: lavender;
+}
+
+.menu1 li a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.menu1 li a:hover {
+    text-decoration: underline;
+}
+
+.bg-menu {
+    background-image: url('images/mainbudget1.webp');
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5; /* Adjust the opacity to make the image lighter */
+}
+
+
+
+
+/*Main*/
+#main {
+    background-color: #ffffd3;
+    padding: 20px 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;"
+}
+
+
+.bg-main {
+    background-image: url('images/mainbudget1.webp');
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5; /* Adjust the opacity to make the image lighter */
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/*Needs*/
+.needs {
+    background-color: #ffffd3;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;"
+}
+
+#needs-form {
+    text-align: center;
+}
+
+
+#needs-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    align-self: flex-start;
+    font-size: 20px;
+}
+
+#needs-form button:hover {
+    background-color: #0056b3;
+}
+
+
+.needs-table-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    align-self: flex-start;
+    font-size: 20px;
+}
+
+.needs-table-container button:hover {
+    background-color: #0056b3;
+}
+
+.budget-form {
+    background: #FFE87C;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.saved-budg-box {
+    background-color: #FFE87C; /* Background color for the box */
+    padding: 25px; /* Add padding inside the box */
+    border-radius: 8px;
+    margin-top: 20px; /* Space from the previous sections */
+    border: 1px solid #ddd; /* Border to separate it visually */
+}
+
+
+
+
+
+/*Wants*/
+.wants {
+    background-color: #ffffd3;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;"
+}
+
+#wants-form {
+    background-color: #FFE87C; /* Background color for the box */
+    padding: 25px; /* Add padding inside the box */
+    border-radius: 8px;
+    margin-top: 20px; /* Space from the previous sections */
+    border: 1px solid #ddd; /* Border to separate it visually */
+    text-align: center;
+}
+
+#wants-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    align-self: flex-start;
+    font-size: 20px;
+}
+
+#wants-form button:hover {
+    background-color: #0056b3;
+}
+
+#wants-table-container {
+    background-color: #FFE87C; /* Background color for the box */
+    padding: 25px; /* Add padding inside the box */
+    border-radius: 8px;
+    margin-top: 20px; /* Space from the previous sections */
+    border: 1px solid #ddd; /* Border to separate it visually */
+}
+
+#wants-table-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    align-self: flex-start;
+    font-size: 20px;
+}
+
+#wants-table-container button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+/*Savings*/
+.savings {
+    background-color: #ffffd3;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;"
+}
+
+#savings-form {
+    background: #FFE87C;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#savings-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    align-self: flex-start;
+    font-size: 20px;
+}
+
+#savings-form button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+form, table {
+    margin: 0 auto;
+    text-align: left;
+    padding: 10px; /* Add padding for better text spacing */
+}
+
+
+
+
+
+
+
+footer {
+    background-color: lavender;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 1px;
+    flex-shrink: 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 0 0 10px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - MoneyVerse Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="dashboard.html"><img src="images/logo.png" alt="Logo" id="logo"></a>
+        <h1>MoneyVerse Hub</h1>
+        <div class="header-right">
+	    <a href="profile.html"><img src="images/profile.png" alt="Settings" id="profile-icon"></a>
+            <a href="settings.html"><img src="images/settings.png" alt="Settings" id="settings-icon"></a>
+        </div>
+    </header>
+
+        <!-- Add horizontal line -->
+        <hr class="divider">
+
+    <header>
+
+        <div class="menu-container">
+            <a href="dashboard.html"><img src="images/dash1.png" alt="3 dashed line" id="dashboard-icon" hspace="50" vspace="0" align="left"></a>
+            <nav class="dropdown-menu">
+                <a href="profile.html">Profile</a>
+                <a href="journal.html">Daily Journal</a>
+                <a href="settings.html">Settings</a>
+            </nav>
+        </div>
+
+        <b><nav>
+	    <a href="dashboard.html">Dashboard</a>
+            <a href="finance.html">Finance</a>
+            <a href="events.html">Events</a>
+            <a href="games.html">Games</a>
+            <a href="quizzes.html">Quizzes</a>
+        </nav></b>
+    </header>
+
+
+    <div class="bg-settings"></div> <!-- Background Image -->
+
+
+<main>
+    <section id="settings">
+        <h2>Settings</h2>
+
+        <!-- Single Form for Notifications and Backup/Restore -->
+        <form id="settings-form">
+            <div class="notifications">
+                <h3>Notifications</h3>
+
+                <label for="bill-reminders">Bill Reminders:</label>
+                <input type="checkbox" id="bill-reminders" name="bill-reminders"></br></br>
+
+                <label for="event-reminders">Event Reminders:</label>
+                <input type="checkbox" id="event-reminders" name="event-reminders"></br></br>
+
+                <label for="journal-prompts">Journal Prompts:</label>
+                <input type="checkbox" id="journal-prompts" name="journal-prompts"></br></br>
+            </div>
+
+            <center><button type="submit" id="save-button">Save Settings</button></center>
+        </form>
+
+    </section>
+</main>
+
+    <footer>
+        <center><marquee behavior="scroll" scrollamount="20" height="40px">&copy; 2025 MoneyVerse Hub by [Smiti Badugu].</marquee></center>
+    </footer>
+
+</body>
+</html>
