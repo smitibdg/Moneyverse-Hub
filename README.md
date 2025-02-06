@@ -1,1 +1,1 @@
-# Moneyverse-Hub
+MoneyVerse Hub is a financial companion designed to simplify money management using the 50/30/20 budgeting rule for better income allocation. It makes budgeting fun with games and quizzes that enhance financial skills. The platform also includes a daily journaling section for notes, reminders, goals, and to-do lists, along with an events section to track important dates. Take control of your finances while enjoying an interactive experience with MoneyVerse Hub!
