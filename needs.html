@@ -29,6 +29,7 @@
 
                     <label>Category:
                         <select id="budgetCategory">
+	    		    <option value="">--Select--</option>
                             <option value="rent">Rent</option>
                             <option value="society-maintenance">Society Maintenance</option>
                             <option value="food-groceries">Food & Groceries</option>
@@ -38,7 +39,7 @@
                             <option value="home-repairs">Home Repairs</option>
                             <option value="general-medical">General Medical</option>
                             <option value="exam-fees">Exam Fees</option>
-                            <option value="school-college-tuition">School/College 
+			    <option value="school-college-tuition">School/College Tuition</option>
                         </select>
                     </label></br></br>
 		    <center><button type="submit" id="saveBudget" style="font-size:20px;">Save Budget</button></center>
@@ -73,6 +74,31 @@
             <span id="totalBudgetDisplay"></span></center> <!-- To show the total calculated budget -->
 	    </section>
         </section>
+
+<script>
+    document.getElementById("needs-form").onsubmit = saveBudget;
+
+    function saveBudget(event) {
+        event.preventDefault(); // Stops page refresh
+
+        let budgetName = document.getElementById("budgetName").value.trim();
+        let budgetPeriod = document.getElementById("budgetPeriod").value;
+        let startDate = document.getElementById("startDate").value;
+        let endDate = document.getElementById("endDate").value;
+        let budgetAmount = document.getElementById("budgetAmount").value.trim();
+        let budgetCategory = document.getElementById("budgetCategory").value;
+
+        if (!budgetName || !budgetPeriod || !startDate || !endDate || !budgetAmount || !budgetCategory) {
+            alert("Please fill out all fields before saving the budget.");
+            return false;
+        }
+
+        alert("Budget saved successfully!");
+        return false;
+    }
+</script>
+
+
 
 </body>
 </html>

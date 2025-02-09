@@ -26,13 +26,14 @@
             <input type="number" id="monthlyContribution" name="monthlyContribution" placeholder="Enter Monthly Contribution"></br></br>
 
 
-            <button type="button" onclick="saveBudget('saves')" id="save-btn">Save</button>
+            <button type="submit" id="save-btn">Save</button>
         </form>
 
 <script>
-    document.getElementById("save-btn").onclick = function() {
-        alert("Budget Saved Successfully!");
-        document.getElementById("needs-form").reset(); // Clears form fields
+    document.getElementById("savings-form").onsubmit = function(event) {
+        event.preventDefault(); // Prevents page refresh
+        alert("Savings details saved successfully!");
+        document.getElementById("savings-form").reset(); // Clears form fields
     };
 </script>
 
